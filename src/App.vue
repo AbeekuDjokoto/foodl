@@ -1,30 +1,44 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+
+  
+  <router-view />
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import HomeViewVue from "./views/HomeView.vue";
+export default {
+  components: {
+    "app-Home": HomeViewVue,
+  },
+};
+</script>
+
+<style scoped>
+
+html,
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+
 nav {
-  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 118px 94px 120px;
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+  margin-right: 72px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+  letter-spacing: -0.04em;
+  color: #000000;
+  text-decoration: none;
 }
 </style>
