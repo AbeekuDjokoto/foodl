@@ -2,9 +2,9 @@
 <div>
     <nav>
       <figure>
-        <img src="../assets/heroLogo.svg" alt="foodl Logo">
+        <router-link to="/"><img src="../assets/heroLogo.svg" alt="foodl Logo"></router-link>
       </figure>
-      <div>
+      <div class="navigation">
         <router-link to="/">Home</router-link>
         <router-link to="/about">Search</router-link>
       </div>
@@ -24,7 +24,8 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 19px 118px 94px 0px;
+  padding: 19px 118px 0px 0px;
+  margin-bottom: 69px;
 }
 
 nav a{
@@ -41,6 +42,12 @@ nav a{
 
 nav a:hover{
   font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+  .navigation{
+    display: none;
+  }
 }
 
 </style>

@@ -73,4 +73,34 @@ h1 {
   width: 519px;
   z-index: 1;
 }
+
+@media only screen and (max-width: 375px) {
+  .container {
+  padding-left: 12px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 32px;
+  width: auto;
+  margin-top: 40px;
+}
+
+.heroMain{
+  flex-wrap: wrap;
+}
+.figure{
+  margin-top: 40px;
+}
+.blackRectangle{
+  position: relative;
+  right: 180px;
+  z-index: 0; 
+}
+
+.bowlImage{
+  width: 319px;
+  z-index: 1;
+}
+}
 </style>
